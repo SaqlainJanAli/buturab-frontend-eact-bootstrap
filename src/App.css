@@ -1,0 +1,315 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.ButurabApp {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.ButurabAppHeader {
+  position: absolute;
+  /* top: 0;  */
+  /* margin-bottom: 220px; */
+  background-color: "#F4FBFF";
+
+  width: "100%";
+  z-index: "999";
+}
+.ButurabAppBody {
+  /* margin-top: auto; */
+  background: linear-gradient(
+    90deg,
+    rgb(219, 243, 255) 0%,
+    rgb(160, 217, 255) 100%
+  );
+  min-height: 80vmin;
+  /* padding: 20; */
+  border: "1.5px solid gray";
+  margin-bottom: 50;
+  padding-top: 120px;
+}
+.ButurabAppFooter {
+  /* background: linear-gradient(90deg, white 0%, rgba(138, 239, 255, 1) 100%); */
+  background-color: #0f0f0f;
+  margin-top: 50;
+  color: white;
+}
+
+.buturab-brand-name {
+  font-family: "Arial Narrow", Arial;
+  font-style: italic;
+  font-weight: bold;
+}
+.buturab-page-name {
+  margin: 20;
+  margin-bottom: 30;
+  font-family: "Times New Roman";
+}
+.textAlignCenter {
+  text-align: center;
+}
+.textAlignJustify {
+  text-align: justify;
+}
+.buturab-name-heading {
+  color: white;
+  text-align: right;
+  /* top: auto; */
+  margin: auto;
+  padding-top: 155px;
+}
+.carousal-panel {
+  background-color: "black";
+}
+.carousal-background {
+  font-size: 40px;
+  color: white;
+}
+.header {
+  font-size: 40px;
+  margin-top: 150px;
+  color: yellow;
+  height: fit-content;
+  text-shadow: 0 0 25px white;
+}
+
+.roundedButton {
+  border-radius: 30px !important;
+  text-decoration: inherit;
+}
+.vl {
+  border-left: 3px solid brown;
+  height: 500px;
+}
+@font-face {
+  font-family: "AlQalamTajNastaleeq";
+  src: url("resources/fonts/AlQalam\ Taj\ Nastaleeq\ Regular.ttf");
+}
+
+.urdu-header-center {
+  font-family: "AlQalamTajNastaleeq";
+  font-size: 30pt;
+}
+.urdu-para-center {
+  font-family: "AlQalamTajNastaleeq";
+  font-size: 20pt;
+}
+
+.urdu-header-right {
+  font-family: "AlQalamTajNastaleeq";
+  font-size: 30pt;
+  text-align: right;
+}
+
+.urdu-para-right {
+  font-family: "AlQalamTajNastaleeq";
+  font-size: 20pt;
+  text-align: right;
+}
+
+.panelSlider {
+  position: relative;
+  height: 100%;
+  max-height: 753px;
+  overflow: hidden;
+  width: 100%;
+}
+.dataContainer {
+  top: 0;
+  z-index: 5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.imgBgFade {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  object-position: center;
+}
+.imgContainer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 4;
+  background-color: rgba(0, 0, 0, 0.196);
+}
+
+.sloganPanel {
+  background-color: #026c96;
+  min-height: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.welcomeStatement {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* About Statement CSS */
+.aboutStatement {
+  margin: auto;
+  padding: 30px;
+  text-align: justify;
+  line-height: 2rem;
+  font-family: "open sans", Helvetica, Arial, sans-serif;
+}
+.aboutStatement h2 {
+  text-transform: uppercase;
+}
+
+/* Home Cards CSS */
+.grid-cards {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.cards {
+  min-height: 300px;
+}
+.card {
+  align-items: center;
+  height: 350;
+  width: 260;
+  /* background-color: #6cbabd; */
+  /* color: "white"; */
+  padding-top: 30;
+}
+.card img {
+  height: 250px;
+  width: 260px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.card:hover {
+  transform: scale(1.009);
+  box-shadow: 0 13px 40px -5px hsla(240, 30.1%, 28%, 0.12),
+    0 8px 32px -8px hsla(0, 0%, 0%, 0.14),
+    0 -6px 32px -6px hsla(0, 0%, 0%, 0.02);
+}
+/* Home Cards Css Ends */
+
+/* Footer CSS */
+
+.ButurabAppFooter > * {
+  flex: 1 100%;
+}
+
+.is-divider {
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-top: 0.66em;
+  height: 3px;
+  display: block;
+  margin: 1em 0;
+  max-width: 60px;
+  color: #f1f1f1;
+  /* margin-left: 50%; */
+}
+/* @import "~bootstrap/scss/bootstrap"; */
+
+/* Padding Top  */
+.pt-1 {
+  padding-top: 1rem;
+}
+.pt-2 {
+  padding-top: 2rem;
+}
+.pt-3 {
+  padding-top: 3rem;
+}
+.pt-4 {
+  padding-top: 4rem;
+}
+.pt-5 {
+  padding-top: 5rem;
+}
+.pt-6 {
+  padding-top: 6rem;
+}
+.pt-7 {
+  padding-top: 7rem;
+}
+
+/* Paddding Bottom */
+.pb-1 {
+  padding-bottom: 1rem;
+}
+.pb-2 {
+  padding-bottom: 2rem;
+}
+.pb-3 {
+  padding-bottom: 3rem;
+}
+.pb-4 {
+  padding-bottom: 4rem;
+}
+.pb-5 {
+  padding-bottom: 5rem;
+}
+.pb-6 {
+  padding-bottom: 6rem;
+}
+.pb-7 {
+  padding-bottom: 7rem;
+}
+
+/* Paddding left */
+.pl-1 {
+  padding-left: 1rem;
+}
+.pl-2 {
+  padding-left: 2rem;
+}
+.pl-3 {
+  padding-left: 3rem;
+}
+.pl-4 {
+  padding-left: 4rem;
+}
+.pl-5 {
+  padding-left: 5rem;
+}
+.pl-6 {
+  padding-left: 6rem;
+}
+.pl-7 {
+  padding-left: 7rem;
+}
+/* Paddding Right */
+.pr-1 {
+  padding-right: 1rem;
+}
+.pr-2 {
+  padding-right: 2rem;
+}
+.pr-3 {
+  padding-right: 3rem;
+}
+.pr-4 {
+  padding-right: 4rem;
+}
+.pr-5 {
+  padding-right: 5rem;
+}
+.pr-6 {
+  padding-right: 6rem;
+}
+.pr-7 {
+  padding-right: 7rem;
+}
