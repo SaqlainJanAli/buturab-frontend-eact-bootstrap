@@ -16,8 +16,8 @@ const About = () => {
           About
         </h4>
         <Container style={{ display: "flex" }}>
-          <Row className="aboutStatement">
-            <Col colspan={12} md={8}>
+          <Row className="aboutStatement" xs={1} sm={1} md={2} lg={2}>
+            <Col lg={8} md={12}>
               <Container>
                 <h2>About Buturab Online Quran Academy</h2>
                 <p>
@@ -41,9 +41,14 @@ const About = () => {
               </Container>
             </Col>
 
-            <Col colspan={12} md={4}>
+            <Col lg={4} md={12}>
               <div>
-                <img src={quranOpenedImage} alt="Quran Opened" />
+                <img
+                  src={quranOpenedImage}
+                  height={300}
+                  width={350}
+                  alt="Quran Opened"
+                />
               </div>
             </Col>
           </Row>

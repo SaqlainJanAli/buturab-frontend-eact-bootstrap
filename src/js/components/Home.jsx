@@ -104,15 +104,8 @@ const Home = () => {
           </p>
         </Container>
 
-        <CardGroup
-          style={{
-            display: "flex",
-            // width: "80%",
-            justifyContent: "center",
-            // margin: "0 auto",
-          }}
-        >
-          <Row xs={1} sm={1} lg={3} md={3}>
+        <CardGroup className="mb-4 display-flex justify-center">
+          <Row xs={1} sm={1} lg={3} md={2}>
             <Col>
               <Card style={{ width: "20rem", minHeight: "25rem" }}>
                 <Card.Img
@@ -123,10 +116,7 @@ const Home = () => {
                 <Card.Body>
                   <Card.Title>Quran Reading & Recitation</Card.Title>
 
-                  <Card.Text
-                    className="textAlignJustify"
-                    style={{ padding: 15 }}
-                  >
+                  <Card.Text className="text-align-justify  p-3">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Sint distinctio veritatis laudantium ipsam fuga
                     perspiciatis, quasi aliquam magnam eveniet minima illum.
@@ -144,10 +134,7 @@ const Home = () => {
                 <Card.Body>
                   <Card.Title>Quran Tafseer</Card.Title>
 
-                  <Card.Text
-                    className="textAlignJustify"
-                    style={{ padding: 15 }}
-                  >
+                  <Card.Text className="text-align-justify p-3">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Sint distinctio veritatis laudantium ipsam fuga
                     perspiciatis, quasi aliquam magnam eveniet minima illum.
@@ -164,10 +151,7 @@ const Home = () => {
                 />
                 <Card.Body>
                   <Card.Title>Fiqhi Masail</Card.Title>
-                  <Card.Text
-                    className="textAlignJustify"
-                    style={{ padding: 15 }}
-                  >
+                  <Card.Text className="text-align-justify  p-3">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Sint distinctio veritatis laudantium ipsam fuga
                     perspiciatis, quasi aliquam magnam eveniet minima illum.

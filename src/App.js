@@ -1,4 +1,5 @@
 import "./App.css";
+import "./css/layout.css";
 // import "rsuite/dist/rsuite.min.css";
 // import "rsuite/styles/index.less";
 import "bootstrap/dist/css/bootstrap.css";
@@ -19,6 +20,7 @@ import About from "./js/components/About/About";
 import React, { Component, useState } from "react";
 import Students from "./js/components/Register/Students";
 import { useEffect } from "react";
+import ContactUs from "./js/components/Contact Us/ContactUs";
 
 function App() {
   const [isSticky, setSticky] = useState(false);
@@ -63,7 +65,7 @@ function App() {
           {/* Header Section Ends */}
 
           {/* Body Section Starts */}
-          <Container className="ButurabAppBody">
+          <Container className="ButurabAppBody pb-4">
             {/* ROUTES */}
             <Routes>
               <Route path="/" element={<Home />} />
@@ -71,7 +73,7 @@ function App() {
               <Route path="/RegisterNow" element={<RegisterNow />} />
               <Route path="/Students" element={<Students />} />
               {/* <Route path="/AcadmeyPortal" element={<AcademyPortal />} /> */}
-              {/* <Route path="/ContactUs" element={<ContactUs />} /> */}
+              <Route path="/ContactUs" element={<ContactUs />} />
               <Route path="/OurServices" element={<OurServices />} />
               <Route path="/FiqhiMasail" element={<FiqhiMasail />} />
               <Route path="/QuranRecitation" element={<QuranRecitation />} />

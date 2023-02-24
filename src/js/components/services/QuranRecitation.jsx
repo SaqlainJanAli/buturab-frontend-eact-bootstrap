@@ -49,85 +49,83 @@ const QuranRecitation = () => {
     <>
       <Container>
         {/* <Grid> */}
-        <Container justify="center" style={{ margin: "20px" }}>
-          <Col as={Col} colspan={24} xs={20} sm={18} md={12} lg={17}>
-            <Container style={{ minHeight: "710px" }}>
-              <br />
-              <h5>Quran Recitation, Reading and Translation</h5>
-              <hr />
-              <ol>
-                <li>
-                  <strong>Basic Qaida Reading</strong>
-                  <br /> <br />
-                  After the completion of this step the student will be able to
-                  know the following
-                  <ol>
-                    <li>
-                      To know how to read and pronounces the Arabic alphabets
-                      correctly.
-                    </li>
-                    <li>To understand the basic rules of Tajweed properly.</li>
-                  </ol>
-                  <br />
-                  <ButtonGroup>
-                    <Button
-                      appearance="primary"
-                      onClick={() => handleModalOpen("md")}
-                    >
-                      Who will get admission in this step?{" "}
-                    </Button>
-                    <Button icon={<FaQuestion />} appearance="primary"></Button>
-                  </ButtonGroup>
-                  {modalAdmission}
-                  <br />
-                  <br />
-                </li>
-                <li>
-                  <strong>Quran Reading</strong>
-                  <br />
-                  <br />
-                  In this important step learner will learn how to read and
-                  pronounce the holy Quran with tajweed rules
-                  <br />
-                  <br />
-                  After completion of this course the learner will be able to
-                  recite the holy Quran with tajweed rules fluently
-                  <br />
-                  <br />
-                </li>
-                <li>
-                  <strong>Quran Translation</strong>
-                  <br />
-                  <br />
-                  This is suitable for those who can recite the holy Quran with
-                  tajweed, because the most important and basic right of the
-                  holy Quran is to recite with proper pronunciation, and second
-                  is to understand it properly.
-                  <br />
-                  <br />
-                </li>
-              </ol>
-            </Container>
-          </Col>
-          <Col as={Col} colspan={24} xs={20} sm={18} md={12} lg={7}>
-            {/* <div class="vl"></div> */}
-            <Container
-              bordered
-              header="Social Media Links"
-              className="textAlignCenter backgroundFaded"
-            >
-              <Row>
-                <div style={{ display: "flex", justifyContent: "center" }}>
+        <Container fluid className="flex justify-center m-4">
+          <Row xs={1} sm={1} md={1} lg={2}>
+            <Col lg={8} md={12}>
+              <Container style={{ minHeight: "710px" }}>
+                <h5>Quran Recitation, Reading and Translation</h5>
+                <hr />
+                <ol>
+                  <li>
+                    <strong>Basic Qaida Reading</strong>
+                    <br /> <br />
+                    After the completion of this step the student will be able
+                    to know the following
+                    <ol>
+                      <li>
+                        To know how to read and pronounces the Arabic alphabets
+                        correctly.
+                      </li>
+                      <li>
+                        To understand the basic rules of Tajweed properly.
+                      </li>
+                    </ol>
+                    <br />
+                    <ButtonGroup>
+                      <Button
+                        appearance="primary"
+                        onClick={() => handleModalOpen("md")}
+                      >
+                        Who will get admission in this step?{" "}
+                      </Button>
+                      <Button>{<FaQuestion />}</Button>
+                    </ButtonGroup>
+                    {modalAdmission}
+                    <br />
+                    <br />
+                  </li>
+                  <li>
+                    <strong>Quran Reading</strong>
+                    <br />
+                    <br />
+                    In this important step learner will learn how to read and
+                    pronounce the holy Quran with tajweed rules
+                    <br />
+                    <br />
+                    After completion of this course the learner will be able to
+                    recite the holy Quran with tajweed rules fluently
+                    <br />
+                    <br />
+                  </li>
+                  <li>
+                    <strong>Quran Translation</strong>
+                    <br />
+                    <br />
+                    This is suitable for those who can recite the holy Quran
+                    with tajweed, because the most important and basic right of
+                    the holy Quran is to recite with proper pronunciation, and
+                    second is to understand it properly.
+                    <br />
+                    <br />
+                  </li>
+                </ol>
+              </Container>
+            </Col>
+
+            <Col lg={4} md={12}>
+              <Container className="backgroundFaded">
+                <h5 className="textAlignCenter">Social Media Links : </h5>
+                <hr />
+                <div className="display-flex justify-center p-2">
                   <TwitterEmbed
                     url="https://twitter.com/SaqlainJanAli/status/1609267301349740545?s=20&t=NLO3G6gTt4LiOqwgnZAw7w"
-                    width={400}
-                    height={800}
+                    width={350}
+                    height={700}
                   />
                 </div>
-              </Row>
-            </Container>
-            {/* Links */}
-          </Col>
+              </Container>
+            </Col>
+          </Row>
         </Container>
         {/* </Grid> */}
       </Container>

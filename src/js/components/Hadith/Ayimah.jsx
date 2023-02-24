@@ -24,29 +24,25 @@ const Ayimah = () => {
   ];
 
   // --Modal Settings
-  const [open, setOpen] = useState(false);
-  const [size, setSize] = useState();
-  const handleModalOpen = (value) => {
-    setSize(value);
-    setOpen(true);
-  };
-  const handleClose = () => setOpen(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const ImamBaqirManazrah = (
-    <Modal size={size} open={open} onClose={handleClose}>
+    <Modal size="lg" show={show} onHide={handleClose} animation>
       <Modal.Header>
-        <Modal.Title className="urduFontHeader">
+        <Modal.Title className="urdu-header-center text-align-right">
           امام محمد باقر ع کا علمی مناظرہ
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Container bordered header="Imam Muhammad Baqir">
-          <h5 className="urduFontHeader">
+        <div className="mb-5">
+          <h5 className="urdu-header-right">
             امام محمد باقر علیہ السلام کے علمی مناظرات
           </h5>
           <br />
-          <br />
-          <br />
-          <p className="urduFontParagraph">
+          <p className="urdu-para-right">
             امام محمد باقر علیہ السلام نے اسلامی تعلیمات کی ترویج اور شیعی معارف
             <br />
             <br />
@@ -60,39 +56,39 @@ const Ayimah = () => {
             ہوگئے (٥)
             <br />
             <br />
-            <br />۔ معظم لہ کے کلام میں عیسائی اسقف سے امام محمد باقر علیہ
-            السلام کے مناظرہ کی شرح و تفسیر معظم لہ فرماتے ہیں : واقعہ یہ تھا کہ
-            ہشام کے پاس ا مام محمد باقر علیہ السلام کی شان میں گستاخی کرنے کا
-            کوئی ثبوت نہیں تھا ، لہذا وہ امام کے مدینہ واپس جانے پر راضی ہوگیا
-            جس وہ امام اپنے فرزند کے ساتھ قصر خلافت سے خارج ہوئے تو ناگاہ راستہ
-            میں ایک مقام پرمجمع کثیرنظرآیا،آپ نے تفحص حال کیاتومعلوم ہواکہ نصاری
-            کاایک راہب ہے جوسال میں صرف ایک باراپنے معبدسے نکلتاہے آج اس کے
-            نکلنے کادن ہے حضرت امام محمدباقرعلیہ السلام اس مجمع میں عوام کے ساتھ
-            جاکربیٹھ گئے ،راہب جوانتہائی ضعیف تھا، مقررہ وقت پربرامدہوا،اوراس نے
-            چاروں طرف نظردوڑانے کے بعدامام :علیہ السلام کی طرف مخاطب ہوکربولا
+            ۔ معظم لہ کے کلام میں عیسائی اسقف سے امام محمد باقر علیہ السلام کے
+            مناظرہ کی شرح و تفسیر معظم لہ فرماتے ہیں : واقعہ یہ تھا کہ ہشام کے
+            پاس ا مام محمد باقر علیہ السلام کی شان میں گستاخی کرنے کا کوئی ثبوت
+            نہیں تھا ، لہذا وہ امام کے مدینہ واپس جانے پر راضی ہوگیا جس وہ امام
+            اپنے فرزند کے ساتھ قصر خلافت سے خارج ہوئے تو ناگاہ راستہ میں ایک
+            مقام پرمجمع کثیرنظرآیا،آپ نے تفحص حال کیاتومعلوم ہواکہ نصاری کاایک
+            راہب ہے جوسال میں صرف ایک باراپنے معبدسے نکلتاہے آج اس کے نکلنے کادن
+            ہے حضرت امام محمدباقرعلیہ السلام اس مجمع میں عوام کے ساتھ جاکربیٹھ
+            گئے ،راہب جوانتہائی ضعیف تھا، مقررہ وقت پربرامدہوا،اوراس نے چاروں
+            طرف نظردوڑانے کے بعدامام :علیہ السلام کی طرف مخاطب ہوکربولا
             <br />
             <br />
             <ol>
               <li style={{ listStylePosition: "unset" }}>
                 ١۔ کیا آپ ہم میں سے ہیں، فرمایا: میں امت محمدیہ سے ہوں۔
-              </li>{" "}
+              </li>
               <br />
               <br />
               <li style={{ listStylePosition: "unset" }}>
                 ٢۔آپ علماء سے ہیں یاجہلاء میں سے ہیں ، فرمایا : میں جاہل نہیں
                 ہوں۔
-              </li>{" "}
+              </li>
               <br />
               <br />
               <li style={{ listStylePosition: "unset" }}>
                 ٣۔ آپ مجھ سے کچھ دریافت کرنے کے لیے آئے ہیں؟ فرمایا : نہیں۔
-              </li>{" "}
+              </li>
               <br />
               <br />
               <li style={{ listStylePosition: "unset" }}>
                 ٤۔ جب کہ آپ عالموں میں سے ہیں کیا؟میں آپ سے کچھ پوچھ سکتاہوں،
                 فرمایا: ضرورپوچھیے ۔
-              </li>{" "}
+              </li>
               <br />
               <br />
             </ol>
@@ -105,21 +101,21 @@ const Ayimah = () => {
                 ہے کہ اس میں بیماروں کوہوش آجاتاہے ، دردکوسکون ہوتاہے جورات
                 بھرنہ سوسکے اسے نیندآتی ہے یہ وقت آخرت کی طرف رغبت رکھنے والوں
                 کے لیے خاص الخاص ہے ۔
-              </li>{" "}
+              </li>
               <br />
               <br />
               <li style={{ listStylePosition: "unset" }}>
                 ٢۔ آپ کاعقیدہ ہے کہ جنت میں پیشاب وپاخانہ کی ضرروت نہ ہوگی ؟کیا
                 دنیامیں اس کی مثال ہے ؟ فرمایابطن مادرمیں جوبچے پرورش پاتے ہیں
                 ان کافضلہ خارج نہیں ہوتا۔
-              </li>{" "}
+              </li>
               <br />
               <br />
               <li style={{ listStylePosition: "unset" }}>
                 ٣۔ مسلمانوں کاعقیدہ ہے کہ کھانے سے بہشت کامیوہ کم نہ ہوگااس کی
                 یہاں کوئی مثال ہے، فرمایاہاں ایک چراغ سے لاکھوں چراغ جلائے جاتے
                 ہیں تب بھی پہلے چراغ کی روشنی میں کمی نہیں ہوتی۔
-              </li>{" "}
+              </li>
               <br />
               <br />
               <li style={{ listStylePosition: "unset" }}>
@@ -131,26 +127,26 @@ const Ayimah = () => {
                 اورسوبرس کے بعدپھرزندہ فرمایا اس کے بعدوہ اپنے بھائی کے ساتھ
                 اورزندہ رہے اورپھرایک ہی روزدونوں نے انتقال کیا۔
               </li>
-            </ol>{" "}
+            </ol>
             <br />
             <br />
             <strong>
               یہ سن کرراہب اپنے ماننے والوں کی طرف متوجہ ہوکرکہنے لگاکہ جب تک یہ
               شخص شام کے حدودمیں موجودہے میں کسی کے سوال کاجواب نہ دوں گاسب کو
               چاہئے کہ اسی عالم زمانہ سے سوال کرے اس کے بعدوہ مسلمان ہوگیا۔
-            </strong>{" "}
+            </strong>
             <br />
             <br />
             یہ بات بہت تیزی سے دمشق میں پھیل گئی اور شام کے لوگ بہت زیادہ خوش
             ہوگئے ، ہشام کو امام باقر علیہ السلام کی افتخار آمیز کامیابی سے خوش
             ہونا چاہئے تھا لیکن وہ پہلے سے بھی زیادہ امام سے ڈرنے لگا اور اس نے
             ظاہر سازی کو برقرار رکھنے کیلئے بہت سے ہدایا اور تحائف بھیجے ، ساتھ
-            ہی ساتھ حکم دیا کہ آج ہی دمشق سے چلے جائیں
+            ہی ساتھ حکم دیا کہ آج ہی دمشق سے چلے جائیں۔
           </p>
-        </Container>
+        </div>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={handleClose} appearance="subtle">
+      <Modal.Footer className="mt-5">
+        <Button onClick={handleClose} variant="primary">
           Cancel
         </Button>
       </Modal.Footer>
@@ -159,7 +155,8 @@ const Ayimah = () => {
 
   //open modal when event key is equals imam baqir
   const handleSelect = (eventKey) => {
-    if (eventKey === "Hazrat Imam Muhammad Baqir a.s") handleModalOpen("md");
+    if (eventKey.target.innerText === "Hazrat Imam Muhammad Baqir a.s")
+      handleShow();
   };
 
   //Render Section
@@ -173,39 +170,36 @@ const Ayimah = () => {
       {/* GRID STARTS */}
       <Container>
         {/* Panel for names List */}
-        <Container
-          header="Ayimah Names"
-          id="panel1"
-          bordered
-          collapsible
-          style={{ backgroundColor: "#B5EAEA" }}
-        >
+        {/* <Container style={{ backgroundColor: "#B5EAEA" }}>
           <ol>
             {AayimmahNames.map((item) => (
               <li style={{ listStylePosition: "unset" }}>{item}</li>
             ))}
           </ol>
-        </Container>
+        </Container> */}
 
         {/* Panel for names List Accordion */}
-        <Accordion.Item
-          eventKey={0}
-          onSelect={handleSelect}
-          style={{ backgroundColor: "#B5EAEA" }}
-        >
+        <Accordion>
           {AayimmahNames.map((item) => (
-            <Accordion.Header
-              id={item}
-              header={item}
+            <Accordion.Item
               eventKey={item}
-              bordered
-              style={{ listStylePosition: "unset" }}
+              title={item}
+              onClick={handleSelect}
+              style={{ backgroundColor: "#B5EAEA" }}
             >
+              <Accordion.Header
+                id={item}
+                eventKey={item}
+                bordered
+                style={{ listStylePosition: "unset" }}
+              >
+                {item}
+              </Accordion.Header>
               <Accordion.Body>{item}</Accordion.Body>
               {ImamBaqirManazrah}
-            </Accordion.Header>
+            </Accordion.Item>
           ))}
-        </Accordion.Item>
+        </Accordion>
       </Container>
       {/* END GRID */}
     </>

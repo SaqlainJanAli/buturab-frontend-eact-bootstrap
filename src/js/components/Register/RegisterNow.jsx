@@ -84,26 +84,26 @@ const RegisterNow = () => {
           مفت ٹرائل لینے کے لیے براہ کرم درج ذیل فارم کو پُر کریں۔ آن لائن قرآن
           کی کلاسز۔ ہم انشاء اللہ جلد آپ سے رابطہ کریں گے۔
         </p>
-        <br />
-        <br />
+
         <Container
-          className="textAlignCenter"
-          style={{
-            color: "black",
-            marginBottom: "2rem",
-            // background:
-            //   "linear-gradient(90deg, rgba(239,255,254,1) 0%, rgba(173,233,233,1) 100%)",
-          }}
+          className="textAlignCenter pt-4"
+          style={
+            {
+              // background:
+              //   "linear-gradient(90deg, rgba(239,255,254,1) 0%, rgba(173,233,233,1) 100%)",
+            }
+          }
         >
           <Form
+            className="p-5"
             variant="light"
             style={{
               border: "1px solid black",
               textAlign: "left",
-              padding: "50px",
+              // padding: "50px",
             }}
           >
-            <Row xs={1} sm={1} lg={3} md={3}>
+            <Row className="pb-4" xs={1} sm={1} lg={3} md={3}>
               <Form.Group className="pt-2">
                 <Form.Label>First name : </Form.Label>
                 <Form.Control
@@ -203,15 +203,13 @@ const RegisterNow = () => {
                 <Form.Control
                   name="Address"
                   as="textarea"
-                  rows={10}
+                  rows={6}
                   onChange={(e) => {
                     formData.Address = e;
                   }}
                 />
               </Form.Group>
             </Row>
-            <br />
-            <br />
 
             <Button type="submit" onClick={handleSubmit} variant="primary">
               Submit
