@@ -1,7 +1,8 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const FiqhiMasail = () => {
-  return <div>FiqhiMasail</div>;
+  return <Container>Fiqhi Masail</Container>;
 };
 
 export default FiqhiMasail;

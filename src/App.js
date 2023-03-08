@@ -21,6 +21,7 @@ import React, { Component, useState } from "react";
 import Students from "./js/components/Register/Students";
 import { useEffect } from "react";
 import ContactUs from "./js/components/Contact Us/ContactUs";
+import FAQs from "./js/components/FAQs";
 
 function App() {
   const [isSticky, setSticky] = useState(false);
@@ -46,9 +47,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Container className="ButurabApp">
+        <div className="ButurabApp">
           {/* Header Section Starts */}
-          <Container
+          <div
             className="ButurabAppHeader"
             style={{
               backgroundColor: "#F4FBFF",
@@ -61,11 +62,11 @@ function App() {
             }}
           >
             <Header />
-          </Container>
+          </div>
           {/* Header Section Ends */}
 
           {/* Body Section Starts */}
-          <Container className="ButurabAppBody pb-4">
+          <div className="ButurabAppBody pb-4">
             {/* ROUTES */}
             <Routes>
               <Route path="/" element={<Home />} />
@@ -79,18 +80,19 @@ function App() {
               <Route path="/QuranRecitation" element={<QuranRecitation />} />
               {/* <Route path="/QuranTafseer" element={<QuranTafseer />} /> */}
               <Route path="/QuranTafseer" element={<Ayimah />} />
+              <Route path="/FAQs" element={<FAQs />} />
               <Route path="/About" element={<About />} />
             </Routes>
             {/* ROUTES END */}
-          </Container>
+          </div>
           {/* Body Section Ends */}
 
           {/* Footer Section Starts */}
-          <Container className="ButurabAppFooter">
+          <div className="ButurabAppFooter">
             <Footer />
-          </Container>
+          </div>
           {/* Footer Section Ends */}
-        </Container>
+        </div>
       </BrowserRouter>
 
       {/* Page Scroll Progress Bar STARTS*/}

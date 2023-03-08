@@ -74,7 +74,7 @@ const RegisterNow = () => {
 
   return (
     <Container>
-      <h4 className="buturab-page-name">Register Now</h4>
+      {/* <h4 className="buturab-page-name">Register Now</h4> */}
       <Container className="textAlignCenter">
         <p>
           Please feel free to fill out the following form to take a free trial

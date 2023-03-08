@@ -47,6 +47,13 @@ let Pages = [
     childItems: [],
     isActive: "",
   },
+  {
+    title: "FAQs",
+    link: "FAQs",
+    isDropDown: false,
+    childItems: [],
+    isActive: "",
+  },
 ];
 
 export default Pages;

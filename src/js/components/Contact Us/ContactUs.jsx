@@ -4,7 +4,7 @@ import { Button, Col, Container, Form } from "react-bootstrap";
 export default function ContactUs() {
   return (
     <>
-      <div>ContactUs</div>
+      {/* <div>ContactUs</div> */}
 
       <Container fluid>
         <Col>
@@ -13,7 +13,8 @@ export default function ContactUs() {
               border: "solid white 1px",
               minHeight: "30rem",
               width: "25rem",
-              background: "#F2EDE4",
+              background: "white",
+              borderRadius: "1rem",
             }}
           >
             <Form className="mt-4 p-4">

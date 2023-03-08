@@ -162,23 +162,7 @@ const Ayimah = () => {
   //Render Section
   return (
     <>
-      <h4
-        style={{ margin: 20, marginBottom: 30, fontFamily: "Times New Roman" }}
-      >
-        Aayimah
-      </h4>
-      {/* GRID STARTS */}
       <Container>
-        {/* Panel for names List */}
-        {/* <Container style={{ backgroundColor: "#B5EAEA" }}>
-          <ol>
-            {AayimmahNames.map((item) => (
-              <li style={{ listStylePosition: "unset" }}>{item}</li>
-            ))}
-          </ol>
-        </Container> */}
-
-        {/* Panel for names List Accordion */}
         <Accordion>
           {AayimmahNames.map((item) => (
             <Accordion.Item
@@ -201,7 +185,6 @@ const Ayimah = () => {
           ))}
         </Accordion>
       </Container>
-      {/* END GRID */}
     </>
   );
 };

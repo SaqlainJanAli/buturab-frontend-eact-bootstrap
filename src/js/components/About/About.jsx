@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div>
-        <h4
+        {/* <h4
           style={{
             margin: 20,
             marginBottom: 30,
@@ -14,7 +14,7 @@ const About = () => {
           }}
         >
           About
-        </h4>
+        </h4> */}
         <Container style={{ display: "flex" }}>
           <Row className="aboutStatement" xs={1} sm={1} md={2} lg={2}>
             <Col lg={8} md={12}>

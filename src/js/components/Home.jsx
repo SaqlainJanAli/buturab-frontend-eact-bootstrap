@@ -161,6 +161,24 @@ const Home = () => {
             </Col>
           </Row>
         </CardGroup>
+
+        <div>
+          <h2 className="findTutorHomeHeading">
+            Find the Perfect Quran Tutor (Male & Female) for You with our 3-Day
+            Free Trial
+          </h2>
+          <p className="findTutorHomePara">
+            At our online Quran academy, we understand that finding the perfect
+            tutor can be a daunting task. That's why we offer a unique
+            opportunity for our students to try out multiple tutors from all
+            over the world during a three-day free trial period. This way, you
+            can experience different teaching styles and select the one that
+            best suits your learning needs. A Our primary goal is to ensure your
+            comfort and satisfaction, and we believe that this trial period is
+            the best way to achieve that. So, take advantage of this opportunity
+            and start your journey to mastering the Quran today!
+          </p>
+        </div>
       </Container>
     </>
   );

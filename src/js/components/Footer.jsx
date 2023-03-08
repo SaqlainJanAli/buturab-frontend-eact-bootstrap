@@ -24,10 +24,15 @@ const Footer = () => {
               <h5>Buturab Online Quran Academy</h5>
               <div class="is-divider small"></div>
               <p className="text-align-justify">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda, expedita harum. Fugiat, molestias? Obcaecati aut,
-                eaque architecto rerum omnis sequi exercitationem mollitia a
-                quaerat perferendis ea sapiente porro officiis similique?
+                Buturab Online Quran Academy is an online platform that provides
+                Quran education and Islamic studies to individuals of all ages
+                and backgrounds. The Academy uses a combination of live virtual
+                classes, recorded lectures, and interactive quizzes to deliver
+                Quran education and Islamic studies to students. Classes are
+                taught by qualified and experienced teachers. Buturab Online
+                Quran Academy is open to individuals of all faiths and
+                backgrounds who are interested in learning about the Quran and
+                Islamic studies.
               </p>
             </Col>
             <Col xs={1} sm={1} lg={1} md={1}></Col>
@@ -42,10 +47,39 @@ const Footer = () => {
               <h5>Useful Links</h5>
               <div class="is-divider small"></div>
               <p className="text-align-justify">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda, expedita harum. Fugiat, molestias? Obcaecati aut,
-                eaque architecto rerum omnis sequi exercitationem mollitia a
-                quaerat perferendis ea sapiente porro officiis similique?
+                <div className="useful-links">
+                  <li>
+                    <a href="https://english.khamenei.ir">
+                      Ayatullah Sayid Ali Khamenei (English)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.leader.ir/">
+                      Ayatullah Sayid Ali Khamenei (Persian)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.sistani.org/english/">
+                      Ayatullah Sayid Ali Sistani (English)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://makarem.ir/">Ayatullah Makarem Sherazi</a>
+                  </li>
+                  <li>
+                    <a href="http://bahjat.ir/en">
+                      Ayatullah Taqi Bahjat (English)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://en.wikishia.net/">Wikishia</a>
+                  </li>
+                  <li>
+                    <a href="http://www.shiasearch.com/en/%D8%A7%D9%86%DA%AF%D9%84%DB%8C%D8%B3%DB%8C.html">
+                      Shia Search (English)
+                    </a>
+                  </li>
+                </div>
               </p>
             </Col>
           </Row>
@@ -54,40 +88,6 @@ const Footer = () => {
         <br />
 
         {/* CopyRights section */}
-        <Container className="text-center">
-          <FacebookShareButton
-            url={"https://www.example.com"}
-            quote={"Dummy text!"}
-            hashtag="#muo"
-          >
-            <FacebookIcon size={32} round />
-          </FacebookShareButton>
-          <TwitterShareButton
-            url={"https://www.example.com"}
-            quote={"Dummy text!"}
-            hashtag="#muo"
-          >
-            <TwitterIcon size={32} round />
-          </TwitterShareButton>
-          <WhatsappShareButton
-            url={"https://www.example.com"}
-            quote={"Dummy text!"}
-            hashtag="#muo"
-          >
-            <WhatsappIcon size={32} round />
-          </WhatsappShareButton>
-          <EmailShareButton
-            url={"https://www.example.com"}
-            quote={"Dummy text!"}
-            hashtag="#muo"
-          >
-            <EmailIcon size={32} round />
-          </EmailShareButton>
-          <p>
-            All Rights Reserved &copy;
-            <br /> 2020-{new Date().getFullYear()} Buturab Development Team
-          </p>
-        </Container>
         <Container className="pt-4 text-center">
           <div>
             Disclaimer:
@@ -124,6 +124,40 @@ const Footer = () => {
           </div>
 
           <br />
+        </Container>
+        <Container className="text-center">
+          <FacebookShareButton
+            url={"https://www.example.com"}
+            quote={"Dummy text!"}
+            hashtag="#muo"
+          >
+            <FacebookIcon size={32} round />
+          </FacebookShareButton>
+          <TwitterShareButton
+            url={"https://www.example.com"}
+            quote={"Dummy text!"}
+            hashtag="#muo"
+          >
+            <TwitterIcon size={32} round />
+          </TwitterShareButton>
+          <WhatsappShareButton
+            url={"https://www.example.com"}
+            quote={"Dummy text!"}
+            hashtag="#muo"
+          >
+            <WhatsappIcon size={32} round />
+          </WhatsappShareButton>
+          <EmailShareButton
+            url={"https://www.example.com"}
+            quote={"Dummy text!"}
+            hashtag="#muo"
+          >
+            <EmailIcon size={32} round />
+          </EmailShareButton>
+          <p>
+            All Rights Reserved &copy;
+            <br /> 2020-{new Date().getFullYear()} Buturab Development Team
+          </p>
         </Container>
       </Container>
     </>
