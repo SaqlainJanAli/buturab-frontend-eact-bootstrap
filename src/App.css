@@ -150,10 +150,11 @@
 }
 
 .sloganPanel {
+  margin-top: 4rem;
   background-color: #026c96;
-  min-height: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  min-height: 10rem;
+  padding: 3rem;
+
   color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

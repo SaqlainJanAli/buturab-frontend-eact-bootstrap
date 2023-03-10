@@ -1,6 +1,7 @@
 // import { Image } from "@rsuite/icons";
 import React from "react";
-import { FaBook } from "react-icons/fa";
+import { FaBook, FaQuran } from "react-icons/fa";
+import { BiBook } from "react-icons/bi";
 import {
   Container,
   Col,
@@ -20,7 +21,35 @@ import bannerImage_02 from "./../../resources/images/WebsiteBannerButurab_02.jpg
 const Home = () => {
   return (
     <>
-      <Container className="textAlignCenter">
+      <Carousel>
+        <Carousel.Item>
+          <img
+            src="https://img.freepik.com/vecteurs-libre/fond-cercles-dans-tons-sombres_60389-166.jpg"
+            alt="BannerImage_01"
+            height="500px"
+            width="100%"
+          />
+
+          <Carousel.Caption className="text-center buturab-name-heading ">
+            <h1 className="font-italic">Buturab Online Quran Academy</h1>
+            <h1 className="urdu-header-center">بوتراب آنلائن قرآن اکیڈمی</h1>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            src="https://img.freepik.com/premium-vector/abstract-particle-structure-background_532781-693.jpg"
+            alt="BannerImage_02"
+            height="500px"
+            width="100%"
+          />
+
+          <Carousel.Caption className="text-center buturab-name-heading ">
+            <h1>Buturab Online Quran Academy</h1>
+            <h1 className="urdu-header-center">بوتراب آنلائن قرآن اکیڈمی</h1>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+      <div className="textAlignCenter">
         {/* <Container className="carousal-panel"> */}
         {/* <Carousel autoplay> */}
 
@@ -69,8 +98,8 @@ const Home = () => {
         {/* </Panel> */}
         {/* </Container> */}
 
-        <Container className="sloganPanel">
-          <div>
+        <div className="sloganPanel">
+          <Container>
             <h3>Learn, Love & Live the Quran... Everyday!</h3>
             <p>
               Discover technology-based resources to connect with the Quran in
@@ -82,8 +111,8 @@ const Home = () => {
               جدید دور میں قرآن سے مربوط ہونے کے لیے ٹیکنالوجی پر مبنی وسائل
               دریافت کریں۔
             </p>
-          </div>
-        </Container>
+          </Container>
+        </div>
 
         <Container className="welcomeStatement">
           <h3>Welcome to Buturab Online Quran Academy. </h3>
@@ -103,66 +132,89 @@ const Home = () => {
             مشغول ہونے میں آپ کی مدد کے لیے دستیاب کرائے ہیں۔
           </p>
         </Container>
+        <Container>
+          <CardGroup className="mb-4 display-flex justify-center">
+            <Row xs={1} sm={1} lg={3} md={2}>
+              <Col>
+                <Card style={{ width: "20rem", minHeight: "25rem" }}>
+                  {/* <Card.Img
+                    variant="top"
+                    // src="quranIconPngColored.png"
+                    // background={
+                    //   <FaQuran size={100} width={"100px"} height="100px" />
+                    // }
+                    alt="quran pic1"
+                  /> */}
+                  <FaQuran
+                    variant="top"
+                    size={100}
+                    color="green"
+                    className="mt-5 mb-3"
+                  />
 
-        <CardGroup className="mb-4 display-flex justify-center">
-          <Row xs={1} sm={1} lg={3} md={2}>
-            <Col>
-              <Card style={{ width: "20rem", minHeight: "25rem" }}>
-                <Card.Img
-                  variant="top"
-                  src="quranIconPngColored.png"
-                  alt="quran pic1"
-                />
-                <Card.Body>
-                  <Card.Title>Quran Reading & Recitation</Card.Title>
+                  <Card.Body>
+                    <Card.Title>Quran Reading & Recitation</Card.Title>
 
-                  <Card.Text className="text-align-justify  p-3">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Sint distinctio veritatis laudantium ipsam fuga
-                    perspiciatis, quasi aliquam magnam eveniet minima illum.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card style={{ width: "20rem", minHeight: "25rem" }}>
-                <Card.Img
-                  variant="top"
-                  src="quranIconPngColored.png"
-                  alt="Quran Picture"
-                />
-                <Card.Body>
-                  <Card.Title>Quran Tafseer</Card.Title>
+                    <Card.Text className="text-align-justify  p-3">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Sint distinctio veritatis laudantium ipsam fuga
+                      perspiciatis, quasi aliquam magnam eveniet minima illum.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card style={{ width: "20rem", minHeight: "25rem" }}>
+                  {/* <Card.Img
+                    variant="top"
+                    src="quranIconPngColored.png"
+                    alt="Quran Picture"
+                  /> */}
+                  <FaBook
+                    variant="top"
+                    size={100}
+                    color="green"
+                    className="mt-5 mb-3"
+                  />
+                  <Card.Body>
+                    <Card.Title>Quran Tafseer</Card.Title>
 
-                  <Card.Text className="text-align-justify p-3">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Sint distinctio veritatis laudantium ipsam fuga
-                    perspiciatis, quasi aliquam magnam eveniet minima illum.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col>
-              <Card style={{ width: "20rem", minHeight: "25rem" }}>
-                <Card.Img
-                  variant="top"
-                  src="quranIconPngColored.png"
-                  alt="quran info"
-                />
-                <Card.Body>
-                  <Card.Title>Fiqhi Masail</Card.Title>
-                  <Card.Text className="text-align-justify  p-3">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Sint distinctio veritatis laudantium ipsam fuga
-                    perspiciatis, quasi aliquam magnam eveniet minima illum.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </CardGroup>
+                    <Card.Text className="text-align-justify p-3">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Sint distinctio veritatis laudantium ipsam fuga
+                      perspiciatis, quasi aliquam magnam eveniet minima illum.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col>
+                <Card style={{ width: "20rem", minHeight: "25rem" }}>
+                  {/* <Card.Img
+                    variant="top"
+                    src="quranIconPngColored.png"
+                    alt="quran info"
+                  /> */}
+                  <BiBook
+                    variant="top"
+                    size={100}
+                    color="green"
+                    className="mt-5 mb-3"
+                  />
+                  <Card.Body>
+                    <Card.Title>Fiqhi Masail</Card.Title>
+                    <Card.Text className="text-align-justify  p-3">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Sint distinctio veritatis laudantium ipsam fuga
+                      perspiciatis, quasi aliquam magnam eveniet minima illum.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </CardGroup>
+        </Container>
 
-        <div>
+        <Container>
           <h2 className="findTutorHomeHeading">
             Find the Perfect Quran Tutor (Male & Female) for You with our 3-Day
             Free Trial
@@ -178,8 +230,8 @@ const Home = () => {
             the best way to achieve that. So, take advantage of this opportunity
             and start your journey to mastering the Quran today!
           </p>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </>
   );
 };
