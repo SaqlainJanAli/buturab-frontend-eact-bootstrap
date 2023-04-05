@@ -18,6 +18,7 @@ import {
 import muslimGirl from "./../../resources/images/muslimGirl.jpg";
 import bannerImage_01 from "./../../resources/images/WebsiteBannerButurab.png";
 import bannerImage_02 from "./../../resources/images/WebsiteBannerButurab_02.jpg";
+import WhyButurab from "./services/WhyButurab";
 const Home = () => {
   return (
     <>
@@ -50,54 +51,6 @@ const Home = () => {
         </Carousel.Item>
       </Carousel>
       <div className="textAlignCenter">
-        {/* <Container className="carousal-panel"> */}
-        {/* <Carousel autoplay> */}
-
-        {/* <div>
-            <div
-              className="imgContainer"
-              style={{
-                background: "linear-gradient(90deg, red 0%, darkred 100%)",
-              }}
-            >
-              <img
-                src={muslimGirl}
-                alt="BannerImage_01"
-                className="imgBgFade"
-              />
-
-              <div className="dataContainer urdu-header-center buturab-name-heading">
-                <h1>Buturab Online Quran Academy</h1>
-                <h1>بوتراب آنلائن قرآن اکیڈمی</h1>
-              </div>
-            </div>
-          </div> */}
-        {/* </Carousel> */}
-        {/* <Panel className="panelSlider"> */}
-        {/* <div class="mask-custom">
-          <h3 class="text-white mb-0">Can you see me?</h3>
-        </div> */}
-        {/* <div className="imgContainer"> */}
-        {/* <img src={muslimGirl} alt="BannerImage_01" className="imgBgFade" /> */}
-        {/* </div> */}
-        {/* <div className="dataContainer">
-          <h1 className="header">
-            Buturab Online Quran Academy
-            <text className="urduFontHeader">بوتراب آنلائن قرآن اکیڈمی</text>
-          </h1> */}
-        {/* <Button className="roundedButton">Contact us</Button> */}
-
-        {/* <IconButton
-            icon={<TwitterIcon />}
-            color="cyan"
-            appearance="primary"
-            circle
-          /> */}
-        {/* </div> */}
-        {/* <h1 className="header">Buturab Online Quran Academy</h1> */}
-        {/* </Panel> */}
-        {/* </Container> */}
-
         <div className="sloganPanel">
           <Container>
             <h3>Learn, Love & Live the Quran... Everyday!</h3>
@@ -230,6 +183,9 @@ const Home = () => {
             the best way to achieve that. So, take advantage of this opportunity
             and start your journey to mastering the Quran today!
           </p>
+        </Container>
+        <Container>
+          <WhyButurab />
         </Container>
       </div>
     </>
