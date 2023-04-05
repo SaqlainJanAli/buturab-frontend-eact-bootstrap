@@ -1,25 +1,41 @@
-// import { Image } from "@rsuite/icons";
 import React from "react";
-import { FaBook, FaQuran } from "react-icons/fa";
-import { BiBook } from "react-icons/bi";
+
 import {
   Container,
   Col,
-  ButtonGroup,
-  IconButton,
-  Button,
-  ButtonToolbar,
   Row,
   Carousel,
   Card,
   CardGroup,
 } from "react-bootstrap";
-// import TwitterIcon from "@rsuite/icons/legacy/Twitter";
 import muslimGirl from "./../../resources/images/muslimGirl.jpg";
 import bannerImage_01 from "./../../resources/images/WebsiteBannerButurab.png";
 import bannerImage_02 from "./../../resources/images/WebsiteBannerButurab_02.jpg";
+import Quran01Png from "./../../resources/images/quran-01-png.png";
+import Quran02Png from "./../../resources/images/quran-02-png.png";
+import BoyeThinkingPng from "./../../resources/images/sad-boy-thinking-png.png";
 import WhyButurab from "./services/WhyButurab";
 const Home = () => {
+  let cardsInfo = [
+    {
+      title: "Quran Reading & Recitation",
+      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum cupiditate corporis eum aliquam magnam, illo mollitia iure maiores quod.",
+      image: { Icon: Quran01Png, width: "15rem", height: "12rem" },
+      alt: "Quran 01 Image",
+    },
+    {
+      title: "Quran Tafseer",
+      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum cupiditate corporis eum aliquam magnam, illo mollitia iure maiores quod.",
+      image: { Icon: Quran02Png, width: "15rem", height: "12rem" },
+      alt: "Quran 01 Image",
+    },
+    {
+      title: "Quran Tafseer",
+      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum cupiditate corporis eum aliquam magnam, illo mollitia iure maiores quod.",
+      image: { Icon: BoyeThinkingPng, width: "15rem", height: "12rem" },
+      alt: "Quran 01 Image",
+    },
+  ];
   return (
     <>
       <Carousel>
@@ -85,84 +101,42 @@ const Home = () => {
             مشغول ہونے میں آپ کی مدد کے لیے دستیاب کرائے ہیں۔
           </p>
         </Container>
+
         <Container>
-          <CardGroup className="mb-4 display-flex justify-center">
-            <Row xs={1} sm={1} lg={3} md={2}>
-              <Col>
-                <Card style={{ width: "20rem", minHeight: "25rem" }}>
-                  {/* <Card.Img
-                    variant="top"
-                    // src="quranIconPngColored.png"
-                    // background={
-                    //   <FaQuran size={100} width={"100px"} height="100px" />
-                    // }
-                    alt="quran pic1"
-                  /> */}
-                  <FaQuran
-                    variant="top"
-                    size={100}
-                    color="green"
-                    className="mt-5 mb-3"
-                  />
+          <CardGroup className="mb-4 d-flex justify-content-center">
+            <Row xs={1} sm={1} lg={3} md={2} className="justify-content-center">
+              {cardsInfo.map((card_item) => (
+                <Col>
+                  <Card
+                    className="card"
+                    style={{
+                      width: "20rem",
+                      minHeight: "25rem",
+                      background:
+                        "linear-gradient(90deg, transparent 0%, white 100%)",
+                    }}
+                  >
+                    {/* <Card.Header> */}
+                    <img
+                      variant="top"
+                      src={card_item.image.Icon}
+                      alt={card_item.alt}
+                      style={{
+                        width: card_item.image.width,
+                        height: card_item.image.height,
+                      }}
+                    />
+                    {/* </Card.Header> */}
 
-                  <Card.Body>
-                    <Card.Title>Quran Reading & Recitation</Card.Title>
-
-                    <Card.Text className="text-align-justify  p-3">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Sint distinctio veritatis laudantium ipsam fuga
-                      perspiciatis, quasi aliquam magnam eveniet minima illum.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card style={{ width: "20rem", minHeight: "25rem" }}>
-                  {/* <Card.Img
-                    variant="top"
-                    src="quranIconPngColored.png"
-                    alt="Quran Picture"
-                  /> */}
-                  <FaBook
-                    variant="top"
-                    size={100}
-                    color="green"
-                    className="mt-5 mb-3"
-                  />
-                  <Card.Body>
-                    <Card.Title>Quran Tafseer</Card.Title>
-
-                    <Card.Text className="text-align-justify p-3">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Sint distinctio veritatis laudantium ipsam fuga
-                      perspiciatis, quasi aliquam magnam eveniet minima illum.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-              <Col>
-                <Card style={{ width: "20rem", minHeight: "25rem" }}>
-                  {/* <Card.Img
-                    variant="top"
-                    src="quranIconPngColored.png"
-                    alt="quran info"
-                  /> */}
-                  <BiBook
-                    variant="top"
-                    size={100}
-                    color="green"
-                    className="mt-5 mb-3"
-                  />
-                  <Card.Body>
-                    <Card.Title>Fiqhi Masail</Card.Title>
-                    <Card.Text className="text-align-justify  p-3">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Sint distinctio veritatis laudantium ipsam fuga
-                      perspiciatis, quasi aliquam magnam eveniet minima illum.
-                    </Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+                    <Card.Body>
+                      <Card.Title>{card_item.title}</Card.Title>
+                      <Card.Text className="text-align-justify p-3">
+                        {card_item.body}
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              ))}
             </Row>
           </CardGroup>
         </Container>
