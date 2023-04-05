@@ -61,7 +61,7 @@ function App() {
               height: "100px",
             }}
           >
-            <Header />
+            <Header isSticky={isSticky} />
           </div>
           {/* Header Section Ends */}
 
