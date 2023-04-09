@@ -17,73 +17,81 @@ import { Col, Container, Row } from "react-bootstrap";
 const Footer = () => {
   return (
     <>
-      <Container>
-        <Container fluid className="display-flex pt-5">
-          <Row className="show-grid justify-center" xs={1} sm={1} lg={4} md={4}>
-            <Col>
-              <h5>Buturab Online Quran Academy</h5>
-              <div class="is-divider small"></div>
-              <p className="text-align-justify">
-                Buturab Online Quran Academy is an online platform that provides
-                Quran education and Islamic studies to individuals of all ages
-                and backgrounds. The Academy uses a combination of live virtual
-                classes, recorded lectures, and interactive quizzes to deliver
-                Quran education and Islamic studies to students. Classes are
-                taught by qualified and experienced teachers. Buturab Online
-                Quran Academy is open to individuals of all faiths and
-                backgrounds who are interested in learning about the Quran and
-                Islamic studies.
-              </p>
-            </Col>
-            <Col xs={1} sm={1} lg={1} md={1}></Col>
-            <Col>
-              <h5>Contacts</h5>
-              <div class="is-divider"></div>
-              <FontAwesomeIcon icon={faEnvelope} /> Email : info@abc.com
-              <br />
-              <FontAwesomeIcon icon={faPhone} /> +92 312 34567890 <br />
-            </Col>
-            <Col>
-              <h5>Useful Links</h5>
-              <div class="is-divider small"></div>
-              <p className="text-align-justify">
-                <div className="useful-links">
-                  <li>
-                    <a href="https://english.khamenei.ir">
-                      Ayatullah Sayid Ali Khamenei (English)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.leader.ir/">
-                      Ayatullah Sayid Ali Khamenei (Persian)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://www.sistani.org/english/">
-                      Ayatullah Sayid Ali Sistani (English)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://makarem.ir/">Ayatullah Makarem Sherazi</a>
-                  </li>
-                  <li>
-                    <a href="http://bahjat.ir/en">
-                      Ayatullah Taqi Bahjat (English)
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://en.wikishia.net/">Wikishia</a>
-                  </li>
-                  <li>
-                    <a href="http://www.shiasearch.com/en/%D8%A7%D9%86%DA%AF%D9%84%DB%8C%D8%B3%DB%8C.html">
-                      Shia Search (English)
-                    </a>
-                  </li>
-                </div>
-              </p>
-            </Col>
-          </Row>
-        </Container>
+      <div className="container-fluid">
+        <div className="container">
+          <div className="d-flex pt-5">
+            {/* <div className="row"> */}
+            <div className="row show-grid justify-center">
+              <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <h5>Buturab Online Quran Academy</h5>
+                <div class="is-divider small"></div>
+                <p className="text-align-justify">
+                  Buturab Online Quran Academy is an online platform that
+                  provides Quran education and Islamic studies to individuals of
+                  all ages and backgrounds. The Academy uses a combination of
+                  live virtual classes, recorded lectures, and interactive
+                  quizzes to deliver Quran education and Islamic studies to
+                  students. Classes are taught by qualified and experienced
+                  teachers. Buturab Online Quran Academy is open to individuals
+                  of all faiths and backgrounds who are interested in learning
+                  about the Quran and Islamic studies.
+                </p>
+              </div>
+              {/* <Col className="col-xs-12 col-sm-12 col-md-1 col-lg-1"></Col> */}
+              <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <h5>Contacts</h5>
+                <div class="is-divider"></div>
+                <FontAwesomeIcon icon={faEnvelope} /> Email :
+                buturab5127232@gmail.com
+                <br />
+                <FontAwesomeIcon icon={faPhone} /> Mobile : +92 346 5127232
+                <br />
+              </div>
+              <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <h5>Useful Links</h5>
+                <div class="is-divider small"></div>
+                <p className="text-align-justify">
+                  <div className="useful-links">
+                    <li>
+                      <a href="https://english.khamenei.ir">
+                        Ayatullah Sayid Ali Khamenei (English)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.leader.ir/">
+                        Ayatullah Sayid Ali Khamenei (Persian)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://www.sistani.org/english/">
+                        Ayatullah Sayid Ali Sistani (English)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://makarem.ir/">
+                        Ayatullah Makarem Sherazi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="http://bahjat.ir/en">
+                        Ayatullah Taqi Bahjat (English)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://en.wikishia.net/">Wikishia</a>
+                    </li>
+                    <li>
+                      <a href="http://www.shiasearch.com/en/%D8%A7%D9%86%DA%AF%D9%84%DB%8C%D8%B3%DB%8C.html">
+                        Shia Search (English)
+                      </a>
+                    </li>
+                  </div>
+                </p>
+              </div>
+            </div>
+            {/* </div> */}
+          </div>
+        </div>
         <br />
         <br />
 
@@ -159,7 +167,7 @@ const Footer = () => {
             <br /> 2020-{new Date().getFullYear()} Buturab Development Team
           </p>
         </Container>
-      </Container>
+      </div>
     </>
   );
 };

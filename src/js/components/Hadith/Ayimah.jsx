@@ -30,7 +30,7 @@ const Ayimah = () => {
   const handleShow = () => setShow(true);
 
   const ImamBaqirManazrah = (
-    <Modal size="lg" show={show} onHide={handleClose} animation>
+    <Modal size="lg" show={show} onHide={handleClose} animation className="p-4">
       <Modal.Header>
         <Modal.Title className="urdu-header-center text-align-right">
           امام محمد باقر ع کا علمی مناظرہ
@@ -163,17 +163,23 @@ const Ayimah = () => {
   return (
     <>
       <Container>
-        <Accordion>
+        <div className="">
+          <h4>Our Ayimah Ahlebait (A.S)</h4>
+        </div>
+
+        <Accordion className="bg-transparent border">
           {AayimmahNames.map((item) => (
             <Accordion.Item
+              className="bg-transparent border"
               eventKey={item}
               title={item}
               onClick={handleSelect}
-              style={{ backgroundColor: "#B5EAEA" }}
+              // style={{ backgroundColor: "#B5EAEA" }}
             >
               <Accordion.Header
                 id={item}
                 eventKey={item}
+                className="bg-info"
                 bordered
                 style={{ listStylePosition: "unset" }}
               >

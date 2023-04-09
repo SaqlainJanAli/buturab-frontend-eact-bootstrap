@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 import PagesList from "./../data/NavPages";
@@ -6,14 +6,12 @@ import { Link } from "react-router-dom";
 import ButurabAppLogo from "./../../resources/images/BUTURAB_LOGO_PLUS_NAME.png";
 
 const NavBar = (props) => {
+  const [toggle, setToggle] = useState(false);
   return (
     <>
-      {/* <div style={{ paddingTop: "25px" }}> */}
       <Navbar
-        // bg="primary"
         expand="sm"
         variant="light"
-        // bg={props.isSticky === true ? "transparent" : "white"}
         style={{
           background: "none",
           color: "black",
@@ -21,25 +19,21 @@ const NavBar = (props) => {
           borderColor: "black",
           marginTop: props.isSticky === true ? "50" : "0",
         }}
+        onToggle={setToggle(true)}
       >
+        <Navbar.Brand className="buturab-brand-name d-none d-sm-block">
+          <img src={ButurabAppLogo} alt="Logo" height={90} width={300} />
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbarScroll"
           data-bs-target="#navbarScroll"
+          className="bg-yellow mt-4 float-right"
         />
-        <Navbar.Collapse id="navbarScroll">
-          <Container>
-            <Navbar.Brand className="buturab-brand-name">
-              <img
-                src={ButurabAppLogo}
-                className
-                alt="Logo"
-                height={90}
-                width={300}
-              />
-            </Navbar.Brand>
 
+        <Navbar.Collapse id="navbarScroll" className="navbar-right">
+          <Container className={`${toggle === true ? "bg-white" : "bg-none"}`}>
             <Nav
-              // className="me-auto"
+              className="navbar-right"
               style={{
                 background: "none",
                 color: "black",

@@ -174,8 +174,8 @@
   text-align: justify;
 }
 .FAQs-accordion-panel {
-  padding-top: 2rem;
-  border-radius: 1rem;
+  /* padding-top: 2rem; */
+  /* border-radius: 1rem; */
 }
 .FAQs-accordion {
   border-radius: 1rem;
@@ -184,7 +184,7 @@
   color: black;
 }
 .FAQs-accordion-header li {
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   padding-left: 0.5rem;
 }
 .FAQs-accordion-body {
