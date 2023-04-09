@@ -7,6 +7,10 @@ import ButurabAppLogo from "./../../resources/images/BUTURAB_LOGO_PLUS_NAME.png"
 
 const NavBar = (props) => {
   const [toggle, setToggle] = useState(false);
+
+  const toggleNavBar = () => {
+    setToggle(!toggle);
+  };
   return (
     <>
       <Navbar
@@ -19,7 +23,8 @@ const NavBar = (props) => {
           borderColor: "black",
           marginTop: props.isSticky === true ? "50" : "0",
         }}
-        onToggle={setToggle(true)}
+        // onToggle={setToggle(!toggle)}
+        onToggle={toggleNavBar}
       >
         <Navbar.Brand className="buturab-brand-name d-none d-sm-block">
           <img src={ButurabAppLogo} alt="Logo" height={90} width={300} />
