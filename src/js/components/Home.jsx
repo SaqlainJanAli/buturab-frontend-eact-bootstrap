@@ -27,13 +27,13 @@ const Home = () => {
       title: "Quran Tafseer",
       body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum cupiditate corporis eum aliquam magnam, illo mollitia iure maiores quod.",
       image: { Icon: Quran02Png, width: "15rem", height: "12rem" },
-      alt: "Quran 01 Image",
+      alt: "Quran 02 Image",
     },
     {
-      title: "Quran Tafseer",
+      title: "Jadeed Fiqhi Masail (Jafaria)",
       body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis harum cupiditate corporis eum aliquam magnam, illo mollitia iure maiores quod.",
       image: { Icon: BoyeThinkingPng, width: "15rem", height: "12rem" },
-      alt: "Quran 01 Image",
+      alt: "Quran 03 Image",
     },
   ];
   return (
@@ -48,7 +48,7 @@ const Home = () => {
           />
 
           <Carousel.Caption className="text-center buturab-name-heading ">
-            <h1 className="font-italic">Buturab Online Quran Academy</h1>
+            <h1 className="font-italic">Buturab Online Islamic Academy</h1>
             <h1 className="urdu-header-center">بوتراب آنلائن قرآن اکیڈمی</h1>
           </Carousel.Caption>
         </Carousel.Item>
@@ -61,7 +61,7 @@ const Home = () => {
           />
 
           <Carousel.Caption className="text-center buturab-name-heading ">
-            <h1>Buturab Online Quran Academy</h1>
+            <h1>Buturab Online Islamic Academy</h1>
             <h1 className="urdu-header-center">بوتراب آنلائن قرآن اکیڈمی</h1>
           </Carousel.Caption>
         </Carousel.Item>
@@ -84,10 +84,10 @@ const Home = () => {
         </div>
 
         <Container className="welcomeStatement">
-          <h3>Welcome to Buturab Online Quran Academy. </h3>
+          <h3>Welcome to Buturab Online Islamic Academy. </h3>
 
           <p>
-            Thank you for taking the time to visit Quran Academy.
+            Thank you for taking the time to visit Islamic Academy.
             <br /> We really appreciate you being here and hope you enjoy
             exploring all the resources we have made available to help you
             engage the Quran daily.
@@ -147,8 +147,8 @@ const Home = () => {
             Free Trial
           </h2>
           <p className="findTutorHomePara">
-            At our online Quran academy, we understand that finding the perfect
-            tutor can be a daunting task. That's why we offer a unique
+            At our online Islamic academy, we understand that finding the
+            perfect tutor can be a daunting task. That's why we offer a unique
             opportunity for our students to try out multiple tutors from all
             over the world during a three-day free trial period. This way, you
             can experience different teaching styles and select the one that

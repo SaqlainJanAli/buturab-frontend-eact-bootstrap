@@ -11,16 +11,16 @@ const About = () => {
             <div className="col-xs-12 col-sm-12 col-md-8 col-lg-8">
               <div className="aboutStatement ">
                 <div>
-                  <h2>About Buturab Online Quran Academy</h2>
+                  <h4>ABOUT BUTURAB ONLINE ISLAMIC ACADEMY</h4>
                   <p>
                     For many years, we have offered online Quran teaching
                     services as an international online school and academy. We
                     help you and your children learn the Qur'an using Tajweed
                     and memorization. We have male and female Quran tutors for
-                    safety and veil reasons. Buturab Online Quran Academy is an
-                    amazing site that enables Muslims from all over the world to
-                    read the Quran using Tajweed. The following programmes are
-                    offered by the Online Quran Academy and are open to all
+                    safety and veil reasons. BUTURAB ONLINE ISLAMIC ACADEMY is
+                    an amazing site that enables Muslims from all over the world
+                    to read the Quran using Tajweed. The following programmes
+                    are offered by the Online Quran Academy and are open to all
                     interested students: Quran Reading & Recitation (Nazra
                     Quran), Nurani Qaida, Memorizing Quran, Translation &
                     Tafseer, Tajweed, Fiqhi Masail (Modern Prepositions),

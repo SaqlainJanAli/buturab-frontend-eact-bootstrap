@@ -3,7 +3,8 @@ import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 import PagesList from "./../data/NavPages";
 import { Link } from "react-router-dom";
-import ButurabAppLogo from "./../../resources/images/BUTURAB_LOGO_PLUS_NAME.png";
+// import ButurabAppLogo from "./../../resources/images/BUTURAB_LOGO_PLUS_NAME.png";
+import ButurabAppLogo from "./../../resources/images/Buturab_logo_with_name_png.png";
 
 const NavBar = (props) => {
   const [toggle, setToggle] = useState(false);
@@ -21,30 +22,30 @@ const NavBar = (props) => {
           color: "black",
           border: "2",
           borderColor: "black",
-          marginTop: props.isSticky === true ? "50" : "0",
+          // marginTop: props.isSticky === true ? "50" : "0",
         }}
-        // onToggle={setToggle(!toggle)}
+        className="pb-2 "
         onToggle={toggleNavBar}
       >
-        <Navbar.Brand className="buturab-brand-name d-none d-sm-block">
-          <img src={ButurabAppLogo} alt="Logo" height={90} width={300} />
+        <Navbar.Brand className="d-none d-sm-block">
+          <img
+            src={ButurabAppLogo}
+            // className="float-left"
+            alt="Logo"
+            height={120}
+            width={300}
+          />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbarScroll"
           data-bs-target="#navbarScroll"
-          className="bg-yellow mt-4 float-right"
+          className="mt-4"
         />
 
-        <Navbar.Collapse id="navbarScroll" className="navbar-right">
-          <Container className={`${toggle === true ? "bg-white" : "bg-none"}`}>
-            <Nav
-              className="navbar-right"
-              style={{
-                background: "none",
-                color: "black",
-                border: "2",
-                borderColor: "black",
-              }}
+        <Navbar.Collapse id="navbarScroll">
+          <Nav className="full-width">
+            <div
+              className={`d-flex ${toggle === true ? "bg-white" : "bg-none"} `}
             >
               {PagesList.map((itemPage) =>
                 itemPage.isDropDown && itemPage.childItems.length > 0 ? (
@@ -64,20 +65,13 @@ const NavBar = (props) => {
                     ))}
                   </NavDropdown>
                 ) : (
-                  <Nav.Link
-                    className="text-black"
-                    href={itemPage.link}
-                    style={{
-                      backgroundColor:
-                        props.isSticky === true ? "white" : "transparent",
-                    }}
-                  >
+                  <Nav.Link className="text-black" href={itemPage.link}>
                     {itemPage.title}
                   </Nav.Link>
                 )
               )}
-            </Nav>
-          </Container>
+            </div>
+          </Nav>
         </Navbar.Collapse>
       </Navbar>
       {/* </div> */}

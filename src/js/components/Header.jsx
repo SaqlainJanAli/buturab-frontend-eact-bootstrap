@@ -5,14 +5,14 @@ import { Container } from "react-bootstrap";
 const Header = (props) => {
   return (
     <>
-      <Container
+      <div
         style={{
           overflow: "visible",
-          height: "100px",
+          minHeight: "40px",
         }}
       >
         <NavBar isSticky={props.isSticky} />
-      </Container>
+      </div>
     </>
   );
 };
