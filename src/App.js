@@ -50,15 +50,14 @@ function App() {
         <div className="ButurabApp">
           {/* Header Section Starts */}
           <div
-            className="ButurabAppHeader"
+            className="ButurabAppHeader w-100"
             style={{
               backgroundColor: "#F4FBFF",
               background: isSticky ? "#fff" : "",
-              width: "100%",
               zIndex: "999",
               position: isSticky ? "fixed" : "absolute",
-              marginBottom: "20px",
-              height: "100px",
+              //marginBottom: isSticky ? "30px" : "0px",
+              // minHeight: "120px",
             }}
           >
             <Header isSticky={isSticky} />

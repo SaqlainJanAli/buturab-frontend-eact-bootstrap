@@ -27,54 +27,49 @@ const NavBar = (props) => {
         className="pb-2 "
         onToggle={toggleNavBar}
       >
-        <Navbar.Brand className="d-none d-sm-block">
-          <img
-            src={ButurabAppLogo}
-            // className="float-left"
-            alt="Logo"
-            height={120}
-            width={300}
-          />
-        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbarScroll"
           data-bs-target="#navbarScroll"
-          className="mt-4"
+          className="mt-4 mx-auto"
         />
 
         <Navbar.Collapse id="navbarScroll">
-          <Nav className="full-width">
-            <div
-              className={`d-flex ${toggle === true ? "bg-white" : "bg-none"} `}
-            >
-              {PagesList.map((itemPage) =>
-                itemPage.isDropDown && itemPage.childItems.length > 0 ? (
-                  <NavDropdown
-                    title={itemPage.title}
-                    className="text-black"
-                    style={{ color: "black" }}
-                    id="basic-nav-dropdown"
-                  >
-                    {itemPage.childItems.map((childItem) => (
-                      <NavDropdown.Item
-                        className="text-black"
-                        href={childItem.link}
-                      >
-                        {childItem.title}
-                      </NavDropdown.Item>
-                    ))}
-                  </NavDropdown>
-                ) : (
-                  <Nav.Link className="text-black" href={itemPage.link}>
-                    {itemPage.title}
-                  </Nav.Link>
-                )
-              )}
-            </div>
-          </Nav>
+          <div className="d-flex justify-content-between">
+            <Navbar.Brand className="d-none d-sm-block">
+              <img src={ButurabAppLogo} alt="Logo" height={100} width={250} />
+            </Navbar.Brand>
+            <Nav className="">
+              <Container
+                className={`${toggle === true ? "bg-white" : "bg-none"} `}
+              >
+                {PagesList.map((itemPage) =>
+                  itemPage.isDropDown && itemPage.childItems.length > 0 ? (
+                    <NavDropdown
+                      title={itemPage.title}
+                      className="text-black"
+                      style={{ color: "black" }}
+                      id="basic-nav-dropdown"
+                    >
+                      {itemPage.childItems.map((childItem) => (
+                        <NavDropdown.Item
+                          className="text-black"
+                          href={childItem.link}
+                        >
+                          {childItem.title}
+                        </NavDropdown.Item>
+                      ))}
+                    </NavDropdown>
+                  ) : (
+                    <Nav.Link className="text-black" href={itemPage.link}>
+                      {itemPage.title}
+                    </Nav.Link>
+                  )
+                )}
+              </Container>
+            </Nav>
+          </div>
         </Navbar.Collapse>
       </Navbar>
-      {/* </div> */}
     </>
   );
 };
