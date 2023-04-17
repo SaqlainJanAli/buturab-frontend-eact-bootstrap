@@ -270,3 +270,7 @@
 .why-buturab-card {
   border-radius: 4rem;
 }
+.full-bleed {
+  box-shadow: 0 0 0 100vmax #121212;
+  clip-path: inset(0 -100vmax);
+}

@@ -41,34 +41,36 @@ const Home = () => {
       <Carousel>
         <Carousel.Item>
           <img
-            src="https://img.freepik.com/vecteurs-libre/fond-cercles-dans-tons-sombres_60389-166.jpg"
+            // src="https://img.freepik.com/vecteurs-libre/fond-cercles-dans-tons-sombres_60389-166.jpg"
+            src={bannerImage_01}
             alt="BannerImage_01"
             height="500px"
             width="100%"
           />
-
+          {/* 
           <Carousel.Caption className="text-center buturab-name-heading ">
             <h1 className="font-italic">Buturab Online Islamic Academy</h1>
             <h1 className="urdu-header-center">بوتراب آنلائن قرآن اکیڈمی</h1>
-          </Carousel.Caption>
+          </Carousel.Caption> */}
         </Carousel.Item>
         <Carousel.Item>
           <img
-            src="https://img.freepik.com/premium-vector/abstract-particle-structure-background_532781-693.jpg"
+            // src="https://img.freepik.com/premium-vector/abstract-particle-structure-background_532781-693.jpg"
+            src={bannerImage_02}
             alt="BannerImage_02"
             height="500px"
             width="100%"
           />
-
+          {/* 
           <Carousel.Caption className="text-center buturab-name-heading ">
             <h1>Buturab Online Islamic Academy</h1>
             <h1 className="urdu-header-center">بوتراب آنلائن قرآن اکیڈمی</h1>
-          </Carousel.Caption>
+          </Carousel.Caption> */}
         </Carousel.Item>
       </Carousel>
       <div className="textAlignCenter">
-        <div className="sloganPanel">
-          <Container>
+        <div className="sloganPanel full-bleed">
+          <div>
             <h3>Learn, Love & Live the Quran... Everyday!</h3>
             <p>
               Discover technology-based resources to connect with the Quran in
@@ -80,7 +82,7 @@ const Home = () => {
               جدید دور میں قرآن سے مربوط ہونے کے لیے ٹیکنالوجی پر مبنی وسائل
               دریافت کریں۔
             </p>
-          </Container>
+          </div>
         </div>
 
         <Container className="welcomeStatement">
@@ -142,10 +144,10 @@ const Home = () => {
         </Container>
 
         <Container>
-          <h2 className="findTutorHomeHeading">
+          <h3 className="findTutorHomeHeading">
             Find the Perfect Quran Tutor (Male & Female) for You with our 3-Day
             Free Trial
-          </h2>
+          </h3>
           <p className="findTutorHomePara">
             At our online Islamic academy, we understand that finding the
             perfect tutor can be a daunting task. That's why we offer a unique
