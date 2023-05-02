@@ -39,8 +39,10 @@ const NavBar = (props) => {
               <img src={ButurabAppLogo} alt="Logo" height={100} width={250} />
             </Navbar.Brand>
             <Nav className="">
-              <Container
-                className={`${toggle === true ? "bg-white" : "bg-none"} `}
+              <div
+                className={`${
+                  toggle === true ? "bg-white" : "bg-none"
+                } container `}
               >
                 {PagesList.map((itemPage) =>
                   itemPage.isDropDown && itemPage.childItems.length > 0 ? (
@@ -65,7 +67,7 @@ const NavBar = (props) => {
                     </Nav.Link>
                   )
                 )}
-              </Container>
+              </div>
             </Nav>
           </div>
         </Navbar.Collapse>

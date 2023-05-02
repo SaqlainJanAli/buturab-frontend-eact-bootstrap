@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <div>
-        <div className="container-fluid d-flex">
+        <div className="container d-flex">
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-8 col-lg-8">
               <div className="aboutStatement ">

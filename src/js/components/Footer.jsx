@@ -96,7 +96,9 @@ const Footer = () => {
         <br />
 
         {/* CopyRights section */}
-        <Container className="pt-4 text-center">
+
+        {/* Commented Disclaimer English and Urdu */}
+        {/* <Container className="pt-4 text-center">
           <div>
             Disclaimer:
             <br />
@@ -132,7 +134,8 @@ const Footer = () => {
           </div>
 
           <br />
-        </Container>
+        </Container> */}
+
         <Container className="text-center">
           <FacebookShareButton
             url={"https://www.example.com"}
@@ -167,6 +170,8 @@ const Footer = () => {
             <br /> 2020-{new Date().getFullYear()} Buturab Development Team
           </p>
         </Container>
+
+        {/* CopyRights Section End */}
       </div>
     </>
   );

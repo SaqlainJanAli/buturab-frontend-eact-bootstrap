@@ -6,8 +6,8 @@ export default function ContactUs() {
     <>
       {/* <div>ContactUs</div> */}
 
-      <div className="container-fluid">
-        <Container className="mt-1">
+      <div className="container">
+        <div className="mt-1">
           <div className="row d-flex">
             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 justify-content-center">
               <div className="d-flex justify-content-center">
@@ -45,7 +45,7 @@ export default function ContactUs() {
               </div>
             </div>
           </div>
-        </Container>
+        </div>
       </div>
     </>
   );
